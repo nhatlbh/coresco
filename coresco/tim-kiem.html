@@ -1,0 +1,380 @@
+<html>
+<head>
+    <title>Tìm kiếm</title>
+    <link rel="icon" href="logo.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/new.css">
+    <!-- js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        function toSearchPage() {
+            window.location = 'tim-kiem.html';
+        }
+    </script>
+</head>
+<body>
+<div class="page">
+    <div class="content-page">
+        <div class="menu-top">
+            <div class="container">
+                <div class="flex-box align-item-center">
+                    <div class="logo-left">
+                        <img src="images/logo.png">
+                    </div>
+                    <div class="name-company">
+                        <h2>CÔNG TY CỔ PHẦN ĐẦU TƯ <span>XÂY DỰNG KINH DOANH NHÀ BẾN THÀNH</span></h2>
+                    </div>
+                    <div class="logo-right">
+                        <p>Member of</p>
+                        <img src="images/logo-group.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header id="header" class="header">
+            <div class="content-header">
+                <div class="container">
+                    <div class="flex-box align-item-center move-logo-ipad">
+                        <div class="menu">
+                            <ul>
+                                <li class="active"><a href="index.html">Trang chủ</a> </li>
+                                <li><a href="gioi-thieu.html">Tổng quan</a> </li>
+                                <li><a href="du-an-tin-tuc.html">Dự án</a> </li>
+                                <li><a href="">Lĩnh vực kinh doanh</a></li>
+                                <li><a href="">Quan hệ cổ đông</a></li>
+                                <li class="parrent-menu">
+                                    <a href="">Tin tức</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="du-an-tin-tuc.html">Tin thị trường bất động sản</a> </li>
+                                        <li class="parrent-submenu">
+                                            <a href="du-an-tin-tuc.html">Tin công ty</a>
+                                            <ul class="sub-menu-2">
+                                                <li><a href="du-an-tin-tuc.html">Tin chính công ty</a></li>
+                                                <li><a href="du-an-tin-tuc.html">Các hoạt động phong trào đoàn thể</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="du-an-tin-tuc.html">Bản tin định kỳ thị trường bất động sản</a> </li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Tuyển dụng</a> </li>
+                                <li class="search-menu">
+                                    <a href=""><i class="fas fa-search"></i></a>
+                                    <div class="popup-search-menu">
+                                            <input type="text" placeholder="Tìm kiếm">
+                                            <button onclick="toSearchPage()">Tìm</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <select>
+                                        <option value="vie">VIE</option>
+                                        <option value="en">EN</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="button-menu-mobile hidden-md">
+                            <span class="icon-menu"><i class="fas fa-bars"></i> </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="page-tim-kiem">
+            <section class="image-banner-goi-thieu">
+                <img src="images/gioi-thieu/image-banner-goi-thieu.png" alt="">
+            </section>
+
+            <section class="content-page-search">
+                <div class="container">
+                    <div class="tab-search">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#search-tin-tuc">Tìm kiếm tin tức</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#search-van-ban">Tìm kiếm văn bản</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <div id="search-tin-tuc" class=" tab-pane active">
+                            <div class="form-search">
+                                <form action="">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="select-chuyen-muc">Chuyên mục</label>
+                                                <select name="" id="select-chuyen-muc">
+                                                    <option value="tin-bat-dong-san">Tin bất động sản</option>
+                                                    <option value="tin-cong-ty">Tin công ty</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Ngày đăng tin</label>
+                                                <div class="input-group date-from" data-provide="datepicker">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                                <div class="input-group date-to" data-provide="datepicker">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-tim-kiem flex-box">
+                                        <input type="text" placeholder="Search" value="Bất động sản">
+                                        <button type="submit"><i class="fas fa-search"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="search-result">
+                                <div class="danh-sach-tin-tuc">
+                                    <div class="tin-tuc-item flex-box">
+                                        <div class="image-tin-tuc">
+                                            <a href="chi-tiet.html"><img src="images/img-blog-1.png" alt=""></a>
+                                        </div>
+                                        <div class="flex-box align-item-center">
+                                            <div class="description-tin-tuc">
+                                                <h4>TIN BẤT ĐỘNG SẢN</h4>
+                                                <h3>Văn phòng cho thuê: "Lính mới" đang phá giá thị trường</h3>
+                                                <p>Theo CBRE, trong quý 1/2016 các dự án văn phòng mới có giá thuê thấp hơn giá trung bình của thị trường đã kéo giá thuê trung bình của xả phân...</p>
+                                                <a href="chi-tiet.html" class="button-style button-red">Xem thêm</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tin-tuc-item flex-box">
+                                        <div class="image-tin-tuc">
+                                            <a href="chi-tiet.html"><img src="images/img-blog-2.png" alt=""></a>
+                                        </div>
+                                        <div class="flex-box align-item-center">
+                                            <div class="description-tin-tuc">
+                                                <h4>TIN BẤT ĐỘNG SẢN</h4>
+                                                <h3>Thị trường sẽ có thêm gói 70.000 tỷ của Ngân hàng Nhà nước?</h3>
+                                                <p>Theo CBRE, trong quý 1/2016 các dự án văn phòng mới có giá thuê thấp hơn giá trung bình của thị trường đã kéo giá thuê trung bình của xả phân...</p>
+                                                <a href="chi-tiet.html" class="button-style button-red">Xem thêm</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tin-tuc-item flex-box">
+                                        <div class="image-tin-tuc">
+                                            <a href="chi-tiet.html"><img src="images/img-blog-5.png" alt=""></a>
+                                        </div>
+                                        <div class="flex-box align-item-center">
+                                            <div class="description-tin-tuc">
+                                                <h4>TIN BẤT ĐỘNG SẢN</h4>
+                                                <h3>Phân khúc nhà ở trung bình: Sẽ bớt... loay hoay </h3>
+                                                <p>Theo CBRE, trong quý 1/2016 các dự án văn phòng mới có giá thuê thấp hơn giá trung bình của thị trường đã kéo giá thuê trung bình của xả phân...</p>
+                                                <a href="chi-tiet.html" class="button-style button-red">Xem thêm</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tin-tuc-item flex-box">
+                                        <div class="image-tin-tuc">
+                                            <a href="chi-tiet.html"><img src="images/img-blog-4.png" alt=""></a>
+                                        </div>
+                                        <div class="flex-box align-item-center">
+                                            <div class="description-tin-tuc">
+                                                <h4>TIN BẤT ĐỘNG SẢN</h4>
+                                                <h3>Năm 2014, tiền chảy mạnh vào bất động sản?</h3>
+                                                <p>Theo CBRE, trong quý 1/2016 các dự án văn phòng mới có giá thuê thấp hơn giá trung bình của thị trường đã kéo giá thuê trung bình của xả phân...</p>
+                                                <a href="chi-tiet.html" class="button-style button-red">Xem thêm</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pagination justify-content-center">
+                                        <ul>
+                                            <li class="pag-prev"><a href=""><i class="fas fa-chevron-left"></i></a> </li>
+                                            <li class="active"><a href="">1</a> </li>
+                                            <li><a href="">2</a> </li>
+                                            <li><a href="">3</a> </li>
+                                            <li><a href="">4</a> </li>
+                                            <li class="pag-next"><a href=""><i class="fas fa-chevron-right"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="search-van-ban" class=" tab-pane fade"><br>
+                            <div class="form-search">
+                                <form action="">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="select-chuyen-muc-vb">Chuyên mục</label>
+                                                <select name="" id="select-chuyen-muc-vb">
+                                                    <option value="tin-bat-dong-san">Tin bất động sản</option>
+                                                    <option value="tin-cong-ty">Tin công ty</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Ngày đăng tin</label>
+                                                <div class="input-group date-from" data-provide="datepicker">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                                <div class="input-group date-to" data-provide="datepicker">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Ngày cập nhật</label>
+                                                <div class="input-group date-update-from" data-provide="datepicker">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                                <div class="input-group date-update-to" data-provide="datepicker">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-tim-kiem flex-box">
+                                        <input type="text" placeholder="Search" value="Bất động sản">
+                                        <button type="submit"><i class="fas fa-search"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="search-result">
+                                <div class="danh-sach-search-file">
+                                    <div class="search-file-item flex-box align-item-center">
+                                        <div class="infor-file">
+                                            <p class="date">20-04-2018</p>
+                                            <h3><a href="">NGHỊ QUYẾT ĐAI HỘI ĐỒNG CỔ ĐÔNG NĂM 2018</a></h3>
+                                            <p class="description-file">NGHỊ QUYẾT ĐAI HỘI ĐỒNG CỔ ĐÔNG NĂM 2018</p>
+                                        </div>
+                                        <div class="file">
+                                            <a href=""><img src="images/pdf.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="search-file-item flex-box align-item-center">
+                                        <div class="infor-file">
+                                            <p class="date">20-04-2018</p>
+                                            <h3><a href="">THÔNG BÁO CHI CỔ TỨC NĂM 2016</a></h3>
+                                            <p class="description-file">Thực hiện Nghị Quyết ĐHĐCĐ thường niên năm 2017. Công ty Cổ phần Đầu tư Xây dựng Kinh doanh Nhà Bến Thành tiến hành chi cổ tức năm 2016.Thời gian chốt danh sách cổ đông ngày 16/09/2017. Thời gian thực hiện từ ngày 22/09/2017 đến ngày 29/09/2017
+                                                (Thông tin chi tiết xin mời xem file đính kèm)</p>
+                                        </div>
+                                        <div class="file">
+                                            <a href=""><img src="images/pdf.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="search-file-item flex-box align-item-center">
+                                        <div class="infor-file">
+                                            <p class="date">20-04-2018</p>
+                                            <h3><a href="">NGHỊ QUYẾT ĐAI HỘI ĐỒNG CỔ ĐÔNG NĂM 2018</a></h3>
+                                            <p class="description-file">BIÊN BẢN ĐHĐCĐ NĂM 2018</p>
+                                        </div>
+                                        <div class="file">
+                                            <a href=""><img src="images/pdf.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="search-file-item flex-box align-item-center">
+                                        <div class="infor-file">
+                                            <p class="date">20-04-2018</p>
+                                            <h3><a href="">NGHỊ QUYẾT ĐAI HỘI ĐỒNG CỔ ĐÔNG NĂM 2018</a></h3>
+                                            <p class="description-file">NGHỊ QUYẾT ĐAI HỘI ĐỒNG CỔ ĐÔNG NĂM 2018</p>
+                                        </div>
+                                        <div class="file">
+                                            <a href=""><img src="images/pdf.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pagination justify-content-center">
+                                    <ul>
+                                        <li class="pag-prev"><a href=""><i class="fas fa-chevron-left"></i></a> </li>
+                                        <li class="active"><a href="">1</a> </li>
+                                        <li><a href="">2</a> </li>
+                                        <li><a href="">3</a> </li>
+                                        <li><a href="">4</a> </li>
+                                        <li class="pag-next"><a href=""><i class="fas fa-chevron-right"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="footer" class="footer">
+            <div class="content-footer" style="background-image: url('images/bg-footer.png')">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="logo-footer">
+                                <a href="">
+                                    <img src="images/logo.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="content-footer-item">
+                                <h4>CÔNG TY CỔ PHẨN ĐẦU TƯ XÂY DỰNG KINH DOANH NHÀ BẾN THÀNH</h4>
+                                <ul>
+                                    <li>Văn phòng: 73 Nguyễn Thái Bình, Q.1, Tp. HCM</li>
+                                    <li>Điện thoại: (08) 821 6243, (08) 821 6893</li>
+                                    <li>Fax: (08) 914 4849</li>
+                                    <li>Website: www.coresco.vn</li>
+                                    <li>Email: coresco@coresco.vn</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="content-footer-item">
+                                <h4>LIÊN KẾT NHANH</h4>
+                                <ul>
+                                    <li><a href="index.html">Trang chủ</a></li>
+                                    <li><a href="gioi-thieu.html">Tổng quan</a></li>
+                                    <li><a href="sitemap.html">Sơ đồ site</a></li>
+                                    <li><a href="lien-he.html">Liên hệ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="content-footer-item">
+                                <h4>Đăng ký email nhận tin</h4>
+                                <div class="form-subcribe">
+                                    <form>
+                                        <input type="Email" name="email" id="email">
+                                        <button type="submit"><!--<i class="fas fa-envelope"></i>-->Gởi</button>
+                                    </form>
+                                </div>
+                                <!--<div class="list-social-footer">
+                                    <ul>
+                                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                                        <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+                                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                    </ul>
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy-right text-center">
+                © 2019 CORESCO. All Rights Reserved
+            </div>
+        </footer>
+    </div>
+</div>
+</body>
+</html>
